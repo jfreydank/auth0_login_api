@@ -1,0 +1,16 @@
+{
+  "user_id": "auth0|5a749b8cf947d171338e9fd7",
+  "nickname": "jdoe",
+  "app_metadata": {
+    "title": "manager"
+  },
+  "picture": "http://foobar.com/pictures/jdoe.png",
+  "identities": [
+    {
+      "provider": "auth0",
+      "user_id": "0123456789",
+      "connection": "Username-Password-Connection",
+      "isSocial": false
+    }
+  ]
+}

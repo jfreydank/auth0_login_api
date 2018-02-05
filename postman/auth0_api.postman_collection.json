@@ -1,0 +1,169 @@
+{
+	"info": {
+		"name": "auth0",
+		"_postman_id": "39f0065f-fcb2-fa20-fb90-f5a69f79ea9c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET read:api localhost:3001/api/test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nmUniqueId",
+							"value": "nmUniqueIdValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "superAgent",
+							"value": "superAgentValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "forwardedFor",
+							"value": "forwardedForValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/test/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"test",
+						"read"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST write:api localhost:3001/api/write",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nmUniqueId",
+							"value": "nmUniqueIdValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "superAgent",
+							"value": "superAgentValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "forwardedFor",
+							"value": "forwardedForValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/test/write",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"test",
+						"write"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE localhost:3001/api/test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nmUniqueId",
+							"value": "nmUniqueIdValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "superAgent",
+							"value": "superAgentValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "forwardedFor",
+							"value": "forwardedForValue",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/test/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"test",
+						"test"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

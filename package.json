@@ -1,0 +1,35 @@
+{
+  "name": "auth0_login_api",
+  "description": "Auth0 React Login and API Authorization",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "react-scripts": "0.9.5"
+  },
+  "dependencies": {
+    "auth0-js": "^9.0.0",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "express-jwt": "^5.3.0",
+    "jwks-rsa": "^1.2.1",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "clean": "rm -rf ./build ./node_modules ./coverage",
+    "start:all": "concurrently \"node src/api/api.js\" \"react-scripts start\"",
+    "start:dev-all": "concurrently \"NODE_ENV=development node src/api/api.js\" \"react-scripts start\"",
+    "start:dev-api": "DEBUG=jwks NODE_ENV=development node src/api/api.js"
+  },
+  "author": "Joern Freydank",
+  "license": "MIT",
+  "proxy": "http://localhost:3001/"
+}
