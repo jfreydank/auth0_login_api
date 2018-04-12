@@ -5,17 +5,19 @@
   "private": true,
   "devDependencies": {
     "concurrently": "^3.5.1",
-    "react-scripts": "0.9.5"
+    "react-scripts": "1.1.4"
   },
   "dependencies": {
-    "auth0-js": "^9.0.0",
+    "auth0-js": "^9.4.2",
     "body-parser": "^1.18.2",
-    "bootstrap": "^3.3.7",
-    "express-jwt": "^5.3.0",
+    "bootstrap": "^4.1.0",
+    "express-jwt": "^5.3.1",
     "jwks-rsa": "^1.2.1",
-    "react": "^15.5.4",
-    "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.5.4",
+    "npm-check-updates": "2.14.1",
+    "nsp": "3.2.1",
+    "react": "^16.3.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.1",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1"
   },
@@ -25,6 +27,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "clean": "rm -rf ./build ./node_modules ./coverage",
+    "ncu": "./node_modules/npm-check-updates/bin/npm-check-updates",
     "start:all": "concurrently \"node src/api/api.js\" \"react-scripts start\"",
     "start:dev-all": "concurrently \"NODE_ENV=development node src/api/api.js\" \"react-scripts start\"",
     "start:dev-api": "DEBUG=jwks NODE_ENV=development node src/api/api.js"
