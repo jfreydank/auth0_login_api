@@ -48,10 +48,10 @@ if (process.env.NODE_ENV === 'development') {
   //app.use(debugRequest());
 }
 app.use(jwtCheck);
-app.use(bodyParser.json())
 
 // use authorization matcher middleware
 app.use(scopeAuthorization());
+app.use(bodyParser.json())
 
 app.get('/api/test/read', function (req, res) {
   console.log('Get request, read action success')
